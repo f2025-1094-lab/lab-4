@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int main(){
+int height, length, base, width, radius;
+double area;
+int choice;
+const float pi = 3.14;
+cout<<"enter height";
+cin>>height;
+cout<<"enter length";
+cin>>height;
+cout<<"enter base";
+cin>>base;
+cout<<"enter width";
+cin>>width;
+cout<<"enter radius";
+cin>>radius;
+cout<<"enter the choice (1 to 3)";
+cout<<" 1 . rectangle";
+cout<<" 2. triangle ";
+cout<<"3. circle";
+cin>>choice;
+switch (choice){
+case 1: 
+cout<<"area of rectangle="<<length*height;
+break;
+case 2:
+cout<<"area of circle="<<3.14*radius*radius;
+break;
+case 3:
+cout<<"area of triangle="<<0.5*length*height;
+break;
+default:
+cout<<"invalid numbers";
+}
+return 0;
+}
